@@ -7,7 +7,7 @@ function gpAdder(){
     if(dNo.value == '') return ;
     document.querySelector(".gp-wrapper").innerHTML = `<img src="images/${x}.png" alt="Naakku" class="nakku" />`
     document.querySelector(".nakku").style.display = 'block'
-    console.log("hellow");
+    console.log("hellow woriking");
     x++;
     if(x>5) x = 1;
 }
