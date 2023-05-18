@@ -1,5 +1,7 @@
 let x = 1;
-document.querySelector(".result-btn").addEventListener("click" ,()=>{
+document.querySelector(".result-btn").addEventListener("click" , gpAdder);
+document.querySelector(".result-btn").addEventListener('keyup', handleKeyUp);
+function gpAdder(){
     // let x = Math.ceil(  Math.random()*5)
     const dNo = document.querySelector(".d-no");
     if(dNo.value == '') return ;
@@ -8,4 +10,16 @@ document.querySelector(".result-btn").addEventListener("click" ,()=>{
     console.log("hellow");
     x++;
     if(x>5) x = 1;
-})
+}
+function handleKeyUp(event) {
+  if (event.keyCode === 13) {
+    console.log('work aaguthu');
+    gpAdder();
+  }
+}
+
+
+
+
+
+
